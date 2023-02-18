@@ -7,7 +7,6 @@ package com.hackerrank_java_badge;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
-import javax.swing.text.NumberFormatter;
 
 /**
  *
@@ -24,7 +23,7 @@ public class JavaCurrencyFormatter {
         String us = f1.format(payment);
         
         NumberFormat f2 = NumberFormat.getCurrencyInstance(Locale.CHINA);
-        String china = f1.format(payment);
+        String china = f2.format(payment);
         
         String india = us;
         StringBuilder sb = new StringBuilder(india);
